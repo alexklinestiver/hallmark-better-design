@@ -1,0 +1,82 @@
+/* Hallmark · tokens · Lady Moon Tattoo
+ * theme: custom (tuned) · vibe: "quilt-bright, patchwork, hand-stitched, retro"
+ * Palette is drawn from the client moodboard: pistachio · moss · coconut · dusty pink · mandarine.
+ * Every colour is OKLCH; every neutral carries a moss/cream tint (no zero-chroma greys).
+ */
+
+:root {
+  /* ── Surfaces ─────────────────────────────────────────── */
+  --color-paper:      oklch(94% 0.024 96);    /* coconut — warm cream, the quilt's background cloth */
+  --color-paper-2:    oklch(90% 0.032 98);    /* sand — one elevation step, tinted band */
+  --color-paper-3:    oklch(86% 0.038 100);   /* deeper sand — hover / inset */
+
+  /* ── Ink ──────────────────────────────────────────────── */
+  --color-ink:        oklch(26% 0.030 138);   /* ebony moss — the seam colour, never pure black */
+  --color-ink-2:      oklch(40% 0.026 138);   /* secondary text */
+  --color-muted:      oklch(50% 0.022 132);   /* de-emphasised text, captions */
+  --color-neutral:    oklch(58% 0.020 128);   /* mid tone */
+
+  /* ── Rules (the seams) ────────────────────────────────── */
+  --color-rule:       oklch(26% 0.030 138);   /* primary seam — full ink, quilts stitch dark */
+  --color-rule-2:     oklch(78% 0.028 104);   /* secondary hairline inside tinted surfaces */
+
+  /* ── Accents · three patches, each owns its own surface ── */
+  --color-accent:     oklch(78% 0.105 356);   /* dusty pink — primary action, the moon */
+  --color-accent-deep:oklch(58% 0.130 358);   /* rosewood — the solid edge under a pressed patch */
+  --color-accent-2:   oklch(84% 0.125 120);   /* pistachio — the studio band, quilt field */
+  --color-accent-2-deep: oklch(45% 0.085 138);/* moss — pistachio's stitched edge */
+  --color-accent-3:   oklch(72% 0.150 62);    /* mandarine — the stars, one high-energy moment */
+  --color-accent-3-deep: oklch(50% 0.130 56);  /* burnt mandarine — mandarine at text weight */
+  --color-accent-ink: oklch(26% 0.030 138);   /* text sitting on any accent patch (all accents L>70) */
+  --color-focus:      oklch(52% 0.190 356);   /* focus ring — accent hue, higher chroma */
+
+  /* ── Type ─────────────────────────────────────────────── */
+  --font-display: "Fascinate", "Bricolage Grotesque", "Arial Black", sans-serif;
+  --font-body:    "Plus Jakarta Sans", "Switzer", ui-sans-serif, sans-serif;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-md:   1.0625rem;
+  --text-lg:   1.25rem;
+  --text-xl:   1.5rem;
+  --text-2xl:  2rem;
+  --text-3xl:  2.75rem;
+  --text-display-s: clamp(2.1rem, 5.6vw, 3.9rem);
+  --text-display:   clamp(2.8rem, 8vw, 5.5rem);
+
+  /* ── Space · 4pt scale ────────────────────────────────── */
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --page-max:    74rem;
+  --page-gutter: clamp(1rem, 4vw, 3rem);
+
+  /* ── Seams, edges, corners ────────────────────────────── */
+  --rule-hair:  1px;
+  --rule-seam:  2px;
+  --rule-slab:  3px;
+  --radius-none: 0;
+  --radius-chip: 2px;
+  --edge-lift:   4px;   /* the solid colour edge under a patch button */
+
+  /* ── Motion ───────────────────────────────────────────── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long:  420ms;
+
+  /* ── Z-scale ──────────────────────────────────────────── */
+  --z-base:   1;
+  --z-raised: 10;
+  --z-sticky: 200;
+}

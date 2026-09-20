@@ -1,14 +1,15 @@
 # Custom worked examples
 
-Three landing pages produced by the **custom** theme route — the new opt-in branch added to Hallmark in v0.6.x. Custom is the route for one-off custom palettes + font pairings tuned to a single brand. **Catalog** (the 16 named themes) is the default; custom fires only when the brief signals creative or unique intent.
+Four landing pages produced by the **custom** theme route — the new opt-in branch added to Hallmark in v0.6.x. Custom is the route for one-off custom palettes + font pairings tuned to a single brand. **Catalog** (the 16 named themes) is the default; custom fires only when the brief signals creative or unique intent.
 
-These three pages are the worked examples written into [`references/custom-theme.md`](../../../skills/hallmark/references/custom-theme.md) § G — rendered as actual HTML so the palette + pairing can be inspected visually.
+The first three are the worked examples written into [`references/custom-theme.md`](../../../skills/hallmark/references/custom-theme.md) § G — rendered as actual HTML so the palette + pairing can be inspected visually. `04-lady-moon` is a client mock-up built on the same route, from a supplied moodboard and a named display face.
 
 | # | Brand | Vibe | Anchor | Macrostructure | Axes |
 | --- | --- | --- | --- | --- | --- |
 | 01 | **Coffeebox** — small-batch coffee subscription | "archival warmth, hand-set, no varnish" | terracotta | Long Document | light / italic-serif / chromatic-terracotta |
 | 02 | **Loop** — payment-rail observability for fintechs | "industrial precision, cool, technical" | sea-blue | Workbench | dark / mono / cool |
 | 03 | **Mossroot** — herbal apothecary in Porto | "moss, lichen, soft pink, herbal" | (skipped — derived) | Catalogue | light / roman-serif / chromatic-other (dusty-pink) |
+| 04 | **Lady Moon Tattoo** — appointment-only studio, Lawrenceville | "quilt-bright, patchwork, hand-stitched, retro" | dusty pink (client moodboard) | Narrative Workflow | light / display-heavy / multi (dusty-pink · pistachio · mandarine) |
 
 Each folder holds:
 
