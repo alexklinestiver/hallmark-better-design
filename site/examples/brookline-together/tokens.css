@@ -1,0 +1,93 @@
+/* Hallmark tokens · design.md-locked theme · Brookline Together Shop
+ * Source: user-supplied design.md ("bakery chalk, cobalt stamp") re-cast for
+ * a neighborhood merch shop. Commercial faces swapped for free Google Fonts:
+ *   Serial Blur (thin variable caps) → Hanken Grotesk 100
+ *   Serial Blur Light (sketch labels) → Hanken Grotesk 300
+ *   Shinka Mono (reading layer)       → DM Mono 400
+ *   Kiddo (handwriting)               → Gochi Hand 400
+ */
+
+:root {
+  /* ── Color ─────────────────────────────────────── */
+  --color-cobalt: #2259ec;        /* Cobalt Stamp — fields, tabs, drawn marks */
+  --color-ticket: #f25a07;        /* Orange Ticket — marks + label highlights only */
+  --color-ticket-ink: #c24502;    /* Orange Ticket, pressed — text-bearing tab fill (5.1:1 on white) */
+  --color-crust: #55270a;         /* Crust Ink — reading text on paper */
+  --color-paper: #f2f0ed;         /* Flour Paper — editorial canvas */
+  --color-icing: #ffffff;         /* White Icing — reversed text */
+
+  --color-crust-soft: rgb(85 39 10 / 0.62);
+  --color-crust-line: rgb(85 39 10 / 0.28);
+  --color-icing-soft: rgb(255 255 255 / 0.72);
+  --color-icing-line: rgb(255 255 255 / 0.4);
+  --color-scrim: rgb(42 18 4 / 0.62);
+  --color-scrim-clear: rgb(42 18 4 / 0);
+  --color-backdrop: rgb(34 89 236 / 0.35);
+  --color-focus: var(--color-ticket);
+
+  /* ── Type families ─────────────────────────────── */
+  --font-display: "Hanken Grotesk", Helvetica, Arial, sans-serif;
+  --font-sketch: "Hanken Grotesk", Helvetica, Arial, sans-serif;
+  --font-mono: "DM Mono", "Helvetica Neue", Helvetica, Arial, monospace;
+  --font-hand: "Gochi Hand", "Comic Sans MS", "Chalkboard SE", "Marker Felt", sans-serif;
+
+  --weight-thin: 100;   /* design.md measures 80; 100 is the free face's floor */
+  --weight-sketch: 300;
+  --weight-regular: 400;
+
+  /* ── Type scale (design.md) ────────────────────── */
+  --text-label: 0.75rem;     /* 12 */
+  --text-input: 0.875rem;    /* 14 */
+  --text-body: 1rem;         /* 16 */
+  --text-addr: 1.5rem;       /* 24 */
+  --text-h3: 2rem;           /* 32 */
+  --text-h2: clamp(2rem, 4.6vw, 3.5rem);     /* → 56 */
+  --text-d1: clamp(2.5rem, 6.4vw, 4.5rem);   /* → 72 */
+  --text-hero: clamp(2.5rem, 4vw, 2.5rem);   /* 40 */
+  --text-hand-lg: clamp(1.75rem, 3.4vw, 2.5rem);
+
+  --track-d1: -0.04em;     /* -2.88px @72 */
+  --track-body: -0.01em;   /* -0.16px @16 */
+  --track-hand: -0.05em;   /* -0.8px @16 */
+  --track-label: -0.05em;  /* -0.6px @12 */
+
+  --leading-display: 1;
+  --leading-body: 1.2;
+  --leading-input: 1.43;
+  --leading-hand: 1.2;
+
+  /* ── Space · 4px base ──────────────────────────── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-section: clamp(64px, 9vw, 100px);
+  --gutter: clamp(16px, 3vw, 20px);
+
+  --max-page: 1400px;
+  --max-content: 1200px;
+  --max-text: 950px;
+  --max-measure: 34rem;
+
+  /* ── Controls ──────────────────────────────────── */
+  --tab-h: 30px;
+  --field-h: 45px;
+  --sketch-h: 40px;
+  --radius: 0px;
+  --stroke: 1.5px;
+
+  /* ── Motion ────────────────────────────────────── */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 140ms;
+  --dur: 280ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur: 0ms; }
+}

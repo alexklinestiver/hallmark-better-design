@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Brookline Together Shop · Tees &amp; Crewnecks</title>
+  <meta name="description" content="Neighborhood tees and crewnecks from Brookline Together, the volunteer-led nonprofit in Brookline, Pittsburgh. Character, charm, convenience — since 1905." />
+  <meta name="theme-color" content="#2259ec" />
+  <!-- Hallmark · pre-emit critique: P5 H4 E4 S5 R4 V5
+       theme: design.md-locked (cobalt stamp / flour paper) · macrostructure: photographic catalogue
+       nav: stamped tabs · footer: collect-the-landmarks game · contrast: pass -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Gochi+Hand&family=Hanken+Grotesk:wght@100;300;400&display=swap" />
+  <link rel="stylesheet" href="./tokens.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip" href="#shop">Skip to the shop</a>
+
+  <!-- ───────── Stamped navigation ───────── -->
+  <header class="nav">
+    <a class="nav__mark" href="#top" aria-label="Brookline Together Shop, back to top">
+      <span class="nav__word">Brookline Together</span>
+      <span class="nav__hand" aria-hidden="true">shop!</span>
+    </a>
+    <nav class="nav__tabs" aria-label="Primary">
+      <a class="tab" href="#shop">Shop</a>
+      <a class="tab tab--hide-sm" href="#crewnecks">Crewnecks</a>
+      <a class="tab tab--hide-sm" href="#story">Story</a>
+      <button class="tab tab--ticket" type="button" data-open-bag aria-haspopup="dialog">
+        Bag <span class="tab__count" data-bag-count>0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ───────── Photographic hero ───────── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__img" src="./img/cannon-front.webp" alt="Someone in the navy Cannon tee with a small cream Brookline print on the chest, standing in a sunlit room" width="1400" height="1400" fetchpriority="high" />
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="hero__copy">
+        <p class="hero__hand">character, charm &amp; convenience</p>
+        <h1 id="hero-title" class="hero__title">Wear the<br />neighborhood</h1>
+        <p class="hero__sub">Tees &amp; crewnecks from Brookline, Pittsburgh. Three prints, drawn from the Boulevard.</p>
+        <div class="hero__actions">
+          <a class="stamp stamp--icing" href="#shop">Shop the prints</a>
+          <a class="sketch sketch--icing" href="#story">Who's behind it</a>
+        </div>
+      </div>
+      <p class="hero__since" aria-hidden="true">since 1905</p>
+    </section>
+
+    <!-- ───────── Cobalt about block ───────── -->
+    <section class="about" id="story" aria-labelledby="about-title">
+      <svg class="doodle doodle--star about__star" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3v34M5 11l30 18M35 11 5 29" /></svg>
+      <p class="label label--icing"><span class="label__mark" aria-hidden="true">✱</span> The story</p>
+      <h2 id="about-title" class="about__title">A neighborhood shop for a neighborhood that runs on volunteers</h2>
+      <div class="about__body">
+        <p>Brookline Together is the volunteer-led nonprofit working to keep Brookline vibrant and livable &mdash; bringing local businesses and residents together on cleanups, block projects and the Brookline Breeze 5K. It carries on the work of the Brookline Chamber of Commerce and South Pittsburgh Development.</p>
+        <p>This shop is the wearable side of that. Every print here is a piece of the neighborhood: the cannon, a firehouse, the lettering of the Boulevard.</p>
+      </div>
+      <p class="about__hand" aria-hidden="true">every shirt helps the neighborhood&nbsp;&rarr;</p>
+    </section>
+
+    <!-- ───────── Print index (directory block) ───────── -->
+    <section class="index" id="shop" aria-labelledby="index-title">
+      <div class="index__head">
+        <p class="label"><span class="label__mark" aria-hidden="true">✱</span> The fall run</p>
+        <h2 id="index-title" class="h2">Three prints,<br />one Boulevard</h2>
+      </div>
+      <ol class="index__list">
+        <li class="index__item index__item--a">
+          <a href="#p-cannon" class="index__link">
+            <img src="./img/cannon-back-800.webp" alt="" width="800" height="800" loading="lazy" />
+            <span class="index__num">01</span>
+            <span class="index__name">The Cannon</span>
+            <span class="index__meta">Navy · cream print · front + back</span>
+          </a>
+        </li>
+        <li class="index__item index__item--b">
+          <a href="#p-firehouse" class="index__link">
+            <img src="./img/firehouse-back-800.webp" alt="" width="800" height="800" loading="lazy" />
+            <span class="index__num">02</span>
+            <span class="index__name">The Firehouse</span>
+            <span class="index__meta">White · cobalt print · front + back</span>
+          </a>
+        </li>
+        <li class="index__item index__item--c">
+          <a href="#p-marquee" class="index__link">
+            <img src="./img/marquee-back-800.webp" alt="" width="800" height="800" loading="lazy" />
+            <span class="index__num">03</span>
+            <span class="index__name">The Marquee</span>
+            <span class="index__meta">Ivory · green &amp; orange · back</span>
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ───────── Products ───────── -->
+    <section class="products" aria-label="Products">
+
+      <!-- 01 · Cannon -->
+      <article class="product product--left" id="p-cannon" data-product="cannon">
+        <div class="product__media">
+          <figure class="product__big">
+            <img src="./img/cannon-back.webp" alt="Back of the navy Cannon tee: a line-drawn cannon over chunky cream BROOKLINE lettering, with Character, Charm, Convenience, Since 1905 beneath" width="1400" height="1400" loading="lazy" />
+          </figure>
+          <figure class="product__small">
+            <img src="./img/cannon-front-800.webp" alt="Front of the Cannon tee with a small chest print" width="800" height="800" loading="lazy" />
+            <figcaption class="note note--arrow">small on the front,<br />loud on the back</figcaption>
+          </figure>
+        </div>
+        <div class="product__info">
+          <p class="product__num">01 / 03</p>
+          <h3 class="product__name">The Cannon</h3>
+          <p class="product__desc">The neighborhood's cannon, drawn in a single line above big rounded Brookline letters. Cream ink on navy. A pocket-size version sits on the chest.</p>
+          <form class="buy" data-buy>
+            <fieldset class="buy__group">
+              <legend class="buy__legend">Style</legend>
+              <div class="seg">
+                <label><input type="radio" name="style" value="tee" checked /><span>Tee</span></label>
+                <label><input type="radio" name="style" value="crew" /><span>Crewneck</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="buy__group">
+              <legend class="buy__legend">Size</legend>
+              <div class="sizes" data-sizes></div>
+            </fieldset>
+            <p class="buy__color">Color · Navy</p>
+            <div class="buy__row">
+              <p class="buy__price" data-price aria-live="polite"></p>
+              <button class="stamp" type="submit">Add to bag</button>
+            </div>
+            <p class="buy__error" data-error role="alert" hidden>Pick a size first.</p>
+          </form>
+        </div>
+      </article>
+
+      <!-- 02 · Firehouse -->
+      <article class="product product--right" id="p-firehouse" data-product="firehouse">
+        <div class="product__media">
+          <figure class="product__big">
+            <img src="./img/firehouse-back.webp" alt="Back of the white Firehouse tee: a cobalt drawing of a columned firehouse with a bell tower, over serif Brookline lettering and Pittsburgh, PA, Est 1905" width="1400" height="1400" loading="lazy" />
+          </figure>
+          <figure class="product__small">
+            <img src="./img/firehouse-front-800.webp" alt="Front of the Firehouse tee with Brookline in cobalt serif on the chest" width="800" height="800" loading="lazy" />
+            <figcaption class="note note--arrow-left">the blue is<br />really this blue</figcaption>
+          </figure>
+        </div>
+        <div class="product__info">
+          <p class="product__num">02 / 03</p>
+          <h3 class="product__name">The Firehouse</h3>
+          <p class="product__desc">A Brookline firehouse drawn bay doors and all, printed in one cobalt ink on white. The chest reads Brookline &mdash; Character, Charm, Convenience &mdash; Pittsburgh, PA, Est 1905.</p>
+          <form class="buy" data-buy>
+            <fieldset class="buy__group">
+              <legend class="buy__legend">Style</legend>
+              <div class="seg">
+                <label><input type="radio" name="style" value="tee" checked /><span>Tee</span></label>
+                <label><input type="radio" name="style" value="crew" /><span>Crewneck</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="buy__group">
+              <legend class="buy__legend">Size</legend>
+              <div class="sizes" data-sizes></div>
+            </fieldset>
+            <p class="buy__color">Color · White</p>
+            <div class="buy__row">
+              <p class="buy__price" data-price aria-live="polite"></p>
+              <button class="stamp" type="submit">Add to bag</button>
+            </div>
+            <p class="buy__error" data-error role="alert" hidden>Pick a size first.</p>
+          </form>
+        </div>
+      </article>
+
+      <!-- 03 · Marquee -->
+      <article class="product product--solo" id="p-marquee" data-product="marquee">
+        <div class="product__media">
+          <figure class="product__big">
+            <img src="./img/marquee-back.webp" alt="Back of the ivory Marquee tee: arched green BROOKLINE lettering with an orange outline, Pittsburgh, PA in orange and a green script tagline" width="1400" height="1400" loading="lazy" />
+            <figcaption class="note note--below">old-sign lettering, the kind you'd<br />see above a Boulevard storefront</figcaption>
+          </figure>
+        </div>
+        <div class="product__info">
+          <p class="product__num">03 / 03</p>
+          <h3 class="product__name">The Marquee</h3>
+          <p class="product__desc">Arched Brookline lettering in forest green with an orange keyline, Pittsburgh, PA underneath, and the motto in a looping script. Printed on the back of an ivory body.</p>
+          <form class="buy" data-buy>
+            <fieldset class="buy__group">
+              <legend class="buy__legend">Style</legend>
+              <div class="seg">
+                <label><input type="radio" name="style" value="tee" checked /><span>Tee</span></label>
+                <label><input type="radio" name="style" value="crew" /><span>Crewneck</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="buy__group">
+              <legend class="buy__legend">Size</legend>
+              <div class="sizes" data-sizes></div>
+            </fieldset>
+            <p class="buy__color">Color · Ivory</p>
+            <div class="buy__row">
+              <p class="buy__price" data-price aria-live="polite"></p>
+              <button class="stamp" type="submit">Add to bag</button>
+            </div>
+            <p class="buy__error" data-error role="alert" hidden>Pick a size first.</p>
+          </form>
+        </div>
+      </article>
+    </section>
+
+    <!-- ───────── Crewneck band ───────── -->
+    <section class="crew" id="crewnecks" aria-labelledby="crew-title">
+      <svg class="crew__doodle" viewBox="0 0 220 180" aria-hidden="true">
+        <path d="M88 22 60 30C40 38 30 58 24 98l-10 50 20 5 12-49 8-22v80h112V82l8 22 12 49 20-5-10-50c-6-40-16-60-36-68l-28-8c-6 14-38 14-44 0z" />
+        <path d="M92 24c8 9 28 9 36 0M16 140l20 5M184 145l20-5M54 152h112" />
+        <path d="M86 92c10-8 38-8 48 0" class="crew__accent" />
+      </svg>
+      <div class="crew__copy">
+        <p class="label label--icing"><span class="label__mark" aria-hidden="true">✱</span> Crewneck weather</p>
+        <h2 id="crew-title" class="crew__title">Every print comes as a crewneck</h2>
+        <p class="crew__body">Same art, heavier body. Choose <b>Crewneck</b> on any print above for a sweatshirt version &mdash; good for the 5K finish line, the bus stop and most of a Pittsburgh year.</p>
+        <p class="crew__hand" aria-hidden="true">crewneck photos coming soon!</p>
+      </div>
+    </section>
+
+    <!-- ───────── Order notes ───────── -->
+    <section class="notes" aria-labelledby="notes-title">
+      <h2 id="notes-title" class="h2 notes__title">Before you order</h2>
+      <dl class="notes__list">
+        <div>
+          <dt>Sizes</dt>
+          <dd>S through 3XL in every print, tee or crewneck. Between sizes? Size up for a roomier fit.</dd>
+        </div>
+        <div>
+          <dt>Shipping &amp; pickup</dt>
+          <dd>Shipping and any neighborhood pickup options are confirmed at checkout.</dd>
+        </div>
+        <div>
+          <dt>Bulk &amp; blocks</dt>
+          <dd>Ordering for a team, a business on the Boulevard, or your whole block? Send us a note below.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ───────── Contact ───────── -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__head">
+        <p class="label"><span class="label__mark" aria-hidden="true">✱</span> Ask us</p>
+        <h2 id="contact-title" class="h2">Sizing, bulk orders,<br />or just hello</h2>
+        <p class="note note--free">we're volunteers &mdash; give us a day or two</p>
+      </div>
+      <form class="contact__form" data-contact novalidate>
+        <div class="field">
+          <label for="c-name">Name</label>
+          <input id="c-name" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="c-email">Email</label>
+          <input id="c-email" name="email" type="email" autocomplete="email" required />
+        </div>
+        <div class="field field--full">
+          <label for="c-msg">Message</label>
+          <textarea id="c-msg" name="message" rows="4" required></textarea>
+        </div>
+        <div class="contact__foot">
+          <button class="sketch" type="submit">Send it</button>
+          <p class="contact__status" data-contact-status role="status"></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- ───────── Collect-the-landmarks footer ───────── -->
+  <footer class="foot" aria-labelledby="foot-title">
+    <div class="game" data-game>
+      <button class="find find--cannon" type="button" aria-pressed="false" aria-label="Find the cannon">
+        <svg viewBox="0 0 120 80" aria-hidden="true"><circle cx="48" cy="52" r="22" /><circle cx="48" cy="52" r="4" /><path d="M48 30v44M26 52h44M33 37l30 30M63 37 33 67" /><path d="M58 38 108 18l4 10-46 24" /><circle cx="80" cy="56" r="14" /><path d="M8 60h18" /></svg>
+      </button>
+      <button class="find find--firehouse" type="button" aria-pressed="false" aria-label="Find the firehouse">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M14 40 50 16l36 24z" /><circle cx="50" cy="31" r="3" /><path d="M20 40v52h60V40M30 92V66h40v26M42 66v26M58 66v26M28 48h10v10H28zM45 48h10v10H45zM62 48h10v10H62z" /></svg>
+      </button>
+      <button class="find find--shoe" type="button" aria-pressed="false" aria-label="Find the 5K running shoe">
+        <svg viewBox="0 0 120 70" aria-hidden="true"><path d="M10 50c0-14 4-30 14-32 6 10 18 12 26 6l12 10c10 8 30 8 46 12 6 2 6 14-2 14H16c-4 0-6-4-6-10z" /><path d="M10 52h98M34 30l6 6M42 26l6 6" /></svg>
+      </button>
+      <button class="find find--tree" type="button" aria-pressed="false" aria-label="Find the park tree">
+        <svg viewBox="0 0 80 100" aria-hidden="true"><path d="M40 92V54M40 64l-10-8M40 60l12-10" /><path d="M40 8c-18 0-30 14-26 30-10 8-6 26 10 26 4 4 28 4 32 0 16 0 20-18 10-26 4-16-8-30-26-30z" /></svg>
+      </button>
+      <button class="find find--heart" type="button" aria-pressed="false" aria-label="Find the heart">
+        <svg viewBox="0 0 80 72" aria-hidden="true"><path d="M40 66C12 46 4 32 6 20 8 8 24 2 40 18 56 2 72 8 74 20c2 12-6 26-34 46z" /></svg>
+      </button>
+
+      <div class="game__center">
+        <p class="label label--icing"><span class="label__mark" aria-hidden="true">✱</span> Little game</p>
+        <h2 id="foot-title" class="game__title">Find all five Brookline landmarks</h2>
+        <p class="game__count" data-game-count aria-live="polite">0 of 5 found</p>
+        <p class="game__win" data-game-win hidden>you're a real Brookliner.</p>
+      </div>
+    </div>
+
+    <div class="foot__bottom">
+      <form class="news" data-news novalidate>
+        <label class="news__label" for="n-email">Hear about the next print</label>
+        <div class="news__row">
+          <input id="n-email" type="email" name="email" placeholder="you@email.com" autocomplete="email" required />
+          <button class="stamp stamp--icing" type="submit">Sign up</button>
+        </div>
+        <p class="news__status" data-news-status role="status"></p>
+      </form>
+      <ul class="foot__links">
+        <li><a href="https://www.brooklinetogether.org/">brooklinetogether.org</a></li>
+        <li><a href="#story">Our story</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="foot__legal">&copy; 2026 Brookline Together Inc. · Brookline, Pittsburgh, PA</p>
+    </div>
+  </footer>
+
+  <!-- ───────── Bag drawer ───────── -->
+  <dialog class="bag" data-bag aria-labelledby="bag-title">
+    <div class="bag__inner">
+      <div class="bag__head">
+        <h2 id="bag-title" class="bag__title">Your bag</h2>
+        <button class="sketch sketch--sm" type="button" data-close-bag>Close</button>
+      </div>
+      <ul class="bag__items" data-bag-items></ul>
+      <p class="bag__empty note" data-bag-empty>nothing in here yet &mdash; go pick a print!</p>
+      <div class="bag__foot" data-bag-foot hidden>
+        <p class="bag__total"><span>Subtotal</span> <span data-bag-total>$0</span></p>
+        <p class="bag__fine">Shipping and tax are worked out at checkout.</p>
+        <button class="stamp stamp--block" type="button" data-checkout>Check out</button>
+        <p class="bag__status" data-checkout-status role="status"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
